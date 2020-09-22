@@ -6,11 +6,15 @@ This program creates a resuable card component that displays a title and a graph
 
 ### AnalyticsCard
 
-- Displays the name/title and the chart on a Card.
+- Displays the title and the chart on a Card.
 
-### Graph
+### BarGraph
 
 - Generates a bar graph using the values of the given JSON data. The values are presented in arrays of integers.
+
+### LineGraph
+
+- Generates a line graph using the values of the given JSON data. The values are presented in arrays of integers.
 
 ### SearchBar
 
@@ -27,3 +31,5 @@ This program creates a resuable card component that displays a title and a graph
 - run `npm install`
 - run `npm start`
 - open a browser and go to `http://localhost:3000/`
+
+![Alt text](./CardComoonent.png?raw=true)
