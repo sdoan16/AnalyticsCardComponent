@@ -1,4 +1,4 @@
-#Analytics Card Component
+## Analytics Card Component
 
 This program creates a resuable card component that displays a title and a graph of any kind.
 
