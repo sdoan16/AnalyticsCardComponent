@@ -1,28 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SearchInput, Button } from "evergreen-ui";
+import "./index.css";
 
 const filterKeywords = ({ text, data, setData }) => {
-  const resultSet = Object.entries(data).filter((d) => d[0].includes(text));
-  const matches = Object.fromEntries(resultSet);
-  setData(matches);
+  const resultSet = data.filter((d) => d["title"].includes(text));
+  setData(resultSet);
 };
 
 const SearchBar = ({ data, setData }) => {
   const [text, setText] = useState("");
 
+  useEffect(() => {
+    setData(data);
+  }, [text]);
+
   return (
-    <div
-      style={{
-        display: "flex",
-      }}
-    >
-      <SearchInput
-        onChange={(e) => {
-          setText(e.target.value);
-          setData(data);
-        }}
-        value={text}
-      />
+    <div className="searchBar">
+      <SearchInput onChange={(e) => setText(e.target.value)} />
       <Button
         marginLeft={15}
         appearance="primary"

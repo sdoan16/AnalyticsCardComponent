@@ -1,0 +1,25 @@
+.cardContainer {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+.cardLayout {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+  scroll-margin-left: auto;
+  scroll-margin-right: auto;
+  padding: 10px;
+}
+
+.noResults {
+  color: rgb(104, 104, 136);
+  font-family: sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}

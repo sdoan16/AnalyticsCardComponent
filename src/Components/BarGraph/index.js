@@ -1,9 +1,9 @@
 import * as d3 from "d3";
 import React, { useRef, useEffect } from "react";
-import { scaleBand, scaleLinear, scaleOrdinal } from "d3-scale";
-import styles from "./graph.css";
+import { scaleBand, scaleLinear } from "d3-scale";
+import "./graph.css";
 
-const Graph = ({ data }) => {
+const BarGraph = ({ data }) => {
   const ref = useRef();
 
   useEffect(() => {
@@ -12,10 +12,7 @@ const Graph = ({ data }) => {
 
     const yScale = scaleLinear().domain([0, 100]).range([height, 0]);
 
-    const xScale = scaleBand()
-      .range([0, width])
-      .domain(data.map((d) => d))
-      .padding(0.2);
+    const xScale = scaleBand().range([0, width]).domain(data).padding(0.2);
 
     const svg = d3
       .select(ref.current)
@@ -38,4 +35,4 @@ const Graph = ({ data }) => {
   return <svg className="body" ref={ref} />;
 };
 
-export default Graph;
+export default BarGraph;

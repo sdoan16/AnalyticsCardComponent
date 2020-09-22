@@ -5,11 +5,16 @@ This program creates a resuable card component that displays a title and a graph
 ## Components
 
 ### AnalyticsCard
-  - Displays the name/title and the chart on a Card.
+
+- Displays the name/title and the chart on a Card.
+
 ### Graph
-  - Generates a bar graph using the values of the given JSON data. The values are presented in arrays of integers.
+
+- Generates a bar graph using the values of the given JSON data. The values are presented in arrays of integers.
+
 ### SearchBar
-  - Accepts a key word or phrase as an input and filters/displays cards that contrain the word in its title.
+
+- Accepts a key word or phrase as an input and filters/displays cards that contrain the word in its title.
 
 ## Requirements
 
