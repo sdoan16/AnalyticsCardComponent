@@ -32,4 +32,4 @@ This program creates a resuable card component that displays a title and a graph
 - run `npm start`
 - open a browser and go to `http://localhost:3000/`
 
-![Alt text](./CardComoonent.png?raw=true)
+![Screenshot](./CardComponent.png)
